@@ -1,29 +1,131 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div>
-        <h2>portfolio of Artist</h2>
-        <audio src="ambient-design-179116.mp3" controls muted aria-label="audio" id="audio" title="amibient sound"></audio>
-        
-        <video  controls>
-            <source src="videoplayback.mp4" aria-label="demo performance"title="movie trailer" />
-            <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
-            some error has been occured.
-        </video><video  controls>
-            <source src="videoplayback.mp4" aria-label="movie trailer" title="movie trailer"/>
-            some error has been occured.
-        </video><video  controls>
-            <source src="videoplayback.mp4" aria-label="interview" title="interview" />
-            some error has been occured.
+
+    <style>
+      h3 {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        color: rgb(210, 136, 39);
+      }
+      h1 {
+        color: red;
+        display: flex;
+        justify-content: center;
+      }
+
+      h2 {
+        display: flex;
+        justify-content: center;
+        color: blue;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 20px;
+      }
+      .container {
+        margin: auto;
+
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (max-width: 300px) {
+        h1{
+            color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>portfolio of Artist</h1>
+      <h2>Featuring Music and Videos</h2>
+
+      <div class="media-info">
+        <h3>Song: Peaceful Melody</h3>
+        <audio
+          src="ambient-design-179116.mp3"
+          controls
+          muted
+          aria-label="audio"
+          id="audio"
+          title="amibient sound"
+          type="audio/mp3"
+        >
+          <a href="ambient-design-179116.mp3" download>download audio</a>
+          your browser doesnt support the audio.
+        </audio>
+        <p>&copy; 2025 Artist Name. All rights reserved.</p>
+      </div>
+      <!-- Video Players -->
+      <div class="media-info">
+        <h3>Demo Performance</h3>
+        <video controls preload="metadata">
+          <source
+            src="videoplayback.mp4"
+            aria-label="demo performance"
+            title="movie trailer"
+          />
+          <track
+            src="fgsubtitles_en.vtt"
+            kind="subtitles"
+            srclang="en"
+            label="English"
+          />
+          some error has been occured.
         </video>
+        <br />
+        <a href="videoplayback.mp4" download>download video</a>
+        <p>&copy; 2025 Artist Name. All rights reserved.</p>
+      </div>
+
+      <div class="media-info">
+        <h3>Movie Trailer</h3>
+        <video controls preload="metadata">
+          <source
+            src="videoplayback.mp4"
+            aria-label="movie trailer"
+            title="movie trailer"
+          />
+          some error has been occured.
+        </video>
+        <br />
+        <a href="videoplayback.mp4" download>download video</a>
+        <p>&copy; 2025 Artist Name. All rights reserved.</p>
+      </div>
+
+      <div class="media-info">
+        <h3>Interview with Artist</h3>
+        <video controls preload="metadata">
+          <source
+            src="videoplayback.mp4"
+            aria-label="interview"
+            title="interview"
+          />
+          some error has been occured.
+        </video>
+        <br />
+        <a href="videoplayback.mp4" download>download video</a>
+        <p>&copy; 2025 Artist Name. All rights reserved.</p>
+      </div>
+
+      <div class="footer">
+        <p>
+          All content is the property of the respective artist and is shared for
+          portfolio purposes only.
+        </p>
+      </div>
     </div>
-    
-    
-</body>
+  </body>
 </html>
